@@ -11,6 +11,7 @@ function openNav() {
 function closeNav() {
     document.getElementById("nav").style.width = "0%";
     document.getElementById("nav").style.height = "100%";
+    document.getElementById("nav").style.display = "none";
     document.getElementById("wrapper").style.display = "block";
 
 }

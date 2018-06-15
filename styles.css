@@ -26,7 +26,22 @@ h2 {
     font-family: 'Dosis', sans-serif;
     display: inline-block;
 }
-
+.h3 {
+    font-family: 'Dosis', sans-serif;
+    font-weight: bold;
+}
+.h4 {
+    font-family: 'Dosis', sans-serif;
+    font-weight: bold;
+}
+.h5 {
+    font-family: 'Dosis', sans-serif;
+    font-weight: bold;
+}
+.h6 {
+    font-family: 'Dosis', sans-serif;
+    font-weight: bold;
+}
 .website {
     font-size: 150%;
 }
@@ -71,22 +86,36 @@ li {
     text-align: center;
     transition: all 700ms ease;
     min-height: -webkit-fill-available;
+    margin-top: 10%;
 }
 #languages {
     text-align: center;
     min-height: -webkit-fill-available;
+    margin-top: 10%;
 }
 #resume {
     text-align: right;
     min-height: -webkit-fill-available;
-    position: absolute;
-    right: 0px;
+    margin-top: 10%;
+}
+#about {
+    display: block;
+    min-height: -webkit-fill-available; 
+    margin-top: 10%;
+}
+#contact {
+    min-height: -webkit-fill-available;
+    margin-top: 10%;
 }
 .title {
     color: lightblue;
 }
 .subheading {
     color: rgb(53, 53, 230);
+    font-family: 'Dosis', 'sans-serif';
+}
+.paragraph {
+    margin-top: 5%;
 }
 .image {
   opacity: 1;
@@ -130,6 +159,7 @@ span {
 .container {
     display: block;
 }
+
 .overlay {
     min-height: -webkit-fill-available;
     width: 0;
@@ -199,11 +229,20 @@ span {
     #me {
         width: 30%;
     }
+    #resume {
+        margin-left: 40%;
+    }
+    #about {
+        margin-left: 40%;
+    }
+    #contact {
+        margin-left: 40%;
+    }
 }
 @media screen and (max-width: 500px) and (max-height: 450px) {
   .overlay a {font-size: 20px}
   .overlay .closebtn {
-    font-size: 40px;
+    font-size: 30px;
     top: 15px;
     right: 35px;
   }

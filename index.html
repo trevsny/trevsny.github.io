@@ -14,13 +14,11 @@
     <script src="javascript.js"></script>
 </head>
 <body>
-    
-
     <div id="nav" class="overlay">
         <!-- Overlay content -->
         <div class="overlay-content">
-                <!-- Button to close the overlay navigation -->
-                <a href="" class="closebtn" onclick="closeNav()">&times;</a>
+            <!-- Button to close the overlay navigation -->
+            <a href="" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="#projects" onclick="closeNav()">Projects</a>
             <a href="#languages" onclick="closeNav()">Languages/Skills</a>
             <a href="#resume" onclick="closeNav()">R&eacute;sum&eacute;</a>
@@ -35,30 +33,26 @@
                 <a href="https://github.com/trevsny
                 "><i class="fab fa-github"></i></a>
                 <span style="cursor:pointer" onclick="openNav()"><i class="fas fa-bars big-icon"></i></span>
+            </div>
         </div>
-
-
-
         <div id="title" class="row">
             <h1 id="name">Trevor Banks Snyder</h1>
             <img id = "me" class="img-rounded img-responsive" src="images/trevProfile.jpg" alt="profile picture">
             <figcaption>Full-Stack Software Developer</figcaption>
         </div>
-    </div>
-    <div id="body" class="container col-8">
-        <div id="sidebar" class="row">
-            <div class="col-3">
-
-                <ul>
-                    <li class = "sideList h5"><a href="#projects"><i class="fas fa-project-diagram"></i>&nbsp;&nbsp;Projects</a></li>
-                    <li class = "sideList h5"><a href="#languages"><i class="fas fa-code"></i>&nbsp;&nbsp;Languages/Skills</a></li>
-                    <li class = "sideList h5"><a href="#resume"><i class="fas fa-file-alt"></i>&nbsp;&nbsp;R&eacute;sum&eacute;</a></li>
-                    <li class = "sideList h5"><a href="#about"><i class="fas fa-fighter-jet"></i>&nbsp;&nbsp;About Me</a></li>
-                    <li class = "sideList h5"><a href="#contact"><i class="far fa-envelope"></i>&nbsp;&nbsp;Contact</a></li>
-                </ul>
+    
+        <div id="body" class="container col-8">
+            <div id="sidebar" class="row">
+                <div class="col-3">
+                    <ul>
+                        <li class = "sideList h5"><a href="#projects"><i class="fas fa-project-diagram"></i>&nbsp;&nbsp;Projects</a></li>
+                        <li class = "sideList h5"><a href="#languages"><i class="fas fa-code"></i>&nbsp;&nbsp;Languages/Skills</a></li>
+                        <li class = "sideList h5"><a href="#resume"><i class="fas fa-file-alt"></i>&nbsp;&nbsp;R&eacute;sum&eacute;</a></li>
+                        <li class = "sideList h5"><a href="#about"><i class="fas fa-fighter-jet"></i>&nbsp;&nbsp;About Me</a></li>
+                        <li class = "sideList h5"><a href="#contact"><i class="far fa-envelope"></i>&nbsp;&nbsp;Contact</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-
             <div id="projects" class="row">
                 <div>
                     <h2>Alisa's Braid Bar - </h2>
@@ -70,66 +64,63 @@
                         <div class="text">
                             <p class="h5">Built in JavaScript, Express.js, Node.js, Angular, and Mongo DB. A business website for braid and hair design.  To book an appointment the client fills out a form that is sent as an email to the business owner.  I want to include multiple APIs and more features in the next versions.</p>
                         </div> 
-                   </div> 
+                    </div> 
                 </div>
-                <div>
+                <div class="row">
                     <h2>myHighlight - </h2>
                     <a class="website" href="https://github.com/trevsny">Make this a real repo</a>
                 </div>
                 <div class="picture row">
-                <img class = "img-rounded img-responsive image" src="images/bballCourt.jpg" alt="basketball court">
-                
-                <div class="middle row justify-content-start">
-                    <div class="text justify-content-center">
-                        <p class="h5">Built in Ruby and Ruby on Rails. Create your own sportscenter-like highlight show.  Choose from various sports to search videos and add them to a list of videos to then consume, like a customizable highlight show.  Work in progress...</p>
-                    </div>                   
+                    <img class = "img-rounded img-responsive image" src="images/bballCourt.jpg" alt="basketball court">
+                    <div class="middle row align-items-center">
+                        <div class="text">
+                            <p class="h5">Built in Ruby and Ruby on Rails. Create your own sportscenter-like highlight show.  Choose from various sports to search videos and add them to a list of videos to then consume, like a customizable highlight show.  Work in progress...</p>
+                        </div>                   
+                    </div>
                 </div>
-                </div>
-                <div>
+                <div class="row">
                     <h2>Taste, Not Waste</h2>
                     <a href="#">Get the website here</a>
                 </div>
                 <div class="picture row">
-                <img class = "img-rounded img-responsive image" src="images/food.jpg" alt="food">
-                    <div class="middle row justify-content-start">
+                    <img class = "img-rounded img-responsive image" src="images/food.jpg" alt="food">
+                    <div class="middle row align-items-center">
                         <div class="text">
                             <p class="h5">Built in Python, Django, mySQL. Collaboration project - goal is to allow restaurants and charities to coordinate picking up leftover food and distributing it to those in need.</p>
                         </div>
                     </div>
                 </div>
-                    
-                
             </div>
                 <!--end of projects section-->
-        <div id="languages" class = "container">
-            <div class="row">
-                <h3 class="title h3">Languages</h3>
-                    <ul> 
-                        <li class="h4">Python</li> 
-                        <li class="h4">Ruby</li>
-                        <li class="h4">JavaScript</li>
-                        <li class="h4">HTML5</li>
-                        <li class="h4">CSS3</li>
-                    </ul>
-            </div>
-            <div class="row">
-                    <h3 class="title h3">Frameworks</h3>
-                    <ul>  
-                        <li class = "h4">Django</li>
-                        <li class = "h4">Ruby on Rails</li>
-                        <li class = "h4">Express.js</li>
-                        <li class = "h4">Angular</li>
-                    </ul>
-            </div>
-            <div class="row">
+            <div id="languages" class = "container">
+                <div class="row">
+                    <h3 class="title h3">Languages</h3>
+                        <ul> 
+                            <li class="h4">Python</li> 
+                            <li class="h4">Ruby</li>
+                            <li class="h4">JavaScript</li>
+                            <li class="h4">HTML5</li>
+                            <li class="h4">CSS3</li>
+                        </ul>
+                </div>
+                <div class="row">
+                        <h3 class="title h3">Frameworks</h3>
+                        <ul>  
+                            <li class = "h4">Django</li>
+                            <li class = "h4">Ruby on Rails</li>
+                            <li class = "h4">Express.js</li>
+                            <li class = "h4">Angular</li>
+                        </ul>
+                </div>
+                <div class="row">
                     <h3 class="title h3">Databases</h3>
                         <ul>  
                             <li class = "h4">mySQL</li>
                             <li class = "h4">PostgreSQL</li>
                             <li class = "h4">MongoDB</li>
                         </ul>
-            </div>
-            <div class="row">
+                </div>
+                <div class="row">
                     <h3 class="title h3">Libraries</h3>
                         <ul>  
                             <li class = "h4">jQuery</li>
@@ -137,84 +128,97 @@
                         </ul>
                 </div>
                 <div class="row">
-                        <h3 class="title h3">Version Control</h3>
-                        <ul>  
-                            <li class = "h4">GitHub</li>
-                            <li class = "h4">GitLab</li>
-                        </ul>
-                </div>
-                <div class="row">
-                        <h3 class="title h3">Deployment</h3>
-                        <ul>
-                            <li class = "h4">AWS EC2</li>
-                        </ul>
-                </div>
-                <div class="row">
-                    
-                        <h3 class="title h3">Experience</h3>
-                        <ul>
-                            <li class = "h4">Node.js</li>
-                            <li class = "h4">SocketIO</li>
-                            <li class = "h4">Balsamiq</li>
-                            <li class = "h4">TDD with Rspec</li>
-                        <li class = "h4">TDD with Capybara</li>
+                    <h3 class="title h3">Version Control</h3>
+                    <ul>  
+                        <li class = "h4">GitHub</li>
+                        <li class = "h4">GitLab</li>
                     </ul>
-            </div>
-        </div> <!--end of projects div________________________-->
-        <div id="resume" class = "container col-md-7">
-            <div class="row">
-
-                <h2 class="h2 subheading">Work Experience</h2>
-                <p class="h3">Coding Dojo | Burbank,CA</p>
-                <p class="h4">Software Developer Trainee</p>
-                <p class="h4">Feb 2018 - June 2018</p>
-                <p class="h5">Full-stack immersive bootcamp that involved 1000+ hours of coding with 60+ other classmates.  Built over 40 apps and concentrated on 3 projects.</p>
-            </div>
-            <div class="row">
-                <p class="h3">SkyWest Airlines | LAX, FAT, MSP</p>
-                <p class="h4">First Officer</p>
-                <p class="h4">Oct 2015 - present</p>
-                <p class="h5"> Assist the Captain/PIC, flight attendants, maintenance, and service personnel, in conducting
-                        the flight safely, efficiently and promptly. 
-                        Manipulate the flight controls of an aircraft while underway - including taxiing, takeoffs and
-                        landings.  
-                        Coordinate with dispatch in the planning and execution of the flight</p>
-            </div>
-            <div class="row">
-                <p class="h3">Channel Islands Aviation | Camarillo, CA</p>
-                <p class="h4">Flight Instructor</p>
-                <p class="h4">Feb 2014 - Oct 2015</p>
-                <p class="h5">Ground and flight instruction for private, instrument, commercial, and ATP certificates both single and multiengine. 
-                        Performed duties as a check instructor for private pilot students to ensure proper progress before allowing them to continue on with current instructor.</p>
-            </div>
-            <div class="row">
-                <h2 class="h2 subheading">Education</h2>
-                <p class="h3">Coding Dojo | Burbank, CA</p>
-                <p class="h4">Nationwide 14-week full-time immersive bootcamp.  Learned HTML, CSS, Python, Ruby, and JavaScript</p>
-                <p class="h4">Feb 2018 - Jun 2018</p>
                 </div>
-            <div class="row">
-                <p class="h3">Western Governors University | Online</p>
-                <p class="h4">MBA</p>
-                <p class="h4">May 2016 - Feb 2018</p>
-                <p class="h5">Scored in the 99th percentile in the team Capstone business simulation</p>
+                <div class="row">
+                    <h3 class="title h3">Deployment</h3>
+                    <ul>
+                        <li class = "h4">AWS EC2</li>
+                    </ul>
+                </div>
+                <div class="row">                   
+                    <h3 class="title h3">Experience</h3>
+                    <ul>
+                        <li class = "h4">Node.js</li>
+                        <li class = "h4">SocketIO</li>
+                        <li class = "h4">Balsamiq</li>
+                        <li class = "h4">TDD with Rspec</li>
+                    <li class = "h4">TDD with Capybara</li>
+                    </ul>
+                </div>
+            </div> <!--end of languages div________________________-->
+            <div id="resume" class = "container col-md-7">
+                <div class="row">
+                    <h2 class="h2 subheading">Work Experience</h2>
+                    <p class="h3">Coding Dojo | Burbank,CA</p>
+                    <p class="h4">Software Developer Trainee</p>
+                    <p class="h4">Feb 2018 - June 2018</p>
+                    <p class="h5">Full-stack immersive bootcamp that involved 1000+ hours of coding with 60+ other classmates.  Built over 40 apps and concentrated on 3 projects.</p>
+                </div>
+                <div class="row">
+                    <p class="h3">SkyWest Airlines | LAX, FAT, MSP</p>
+                    <p class="h4">First Officer</p>
+                    <p class="h4">Oct 2015 - present</p>
+                    <p class="h5"> Assist the Captain/PIC, flight attendants, maintenance, and service personnel, in conducting
+                            the flight safely, efficiently and promptly. 
+                            Manipulate the flight controls of an aircraft while underway - including taxiing, takeoffs and
+                            landings.  
+                            Coordinate with dispatch in the planning and execution of the flight</p>
+                </div>
+                <div class="row">
+                    <p class="h3">Channel Islands Aviation | Camarillo, CA</p>
+                    <p class="h4">Flight Instructor</p>
+                    <p class="h4">Feb 2014 - Oct 2015</p>
+                    <p class="h5">Ground and flight instruction for private, instrument, commercial, and ATP certificates both single and multiengine. 
+                            Performed duties as a check instructor for private pilot students to ensure proper progress before allowing them to continue on with current instructor.</p>
+                </div>
+                <div class="row">
+                    <h2 class="h2 subheading">Education</h2>
+                    <p class="h3">Coding Dojo | Burbank, CA</p>
+                    <p class="h4">Nationwide 14-week full-time immersive bootcamp.  Learned HTML, CSS, Python, Ruby, and JavaScript</p>
+                    <p class="h4">Feb 2018 - Jun 2018</p>
+                </div>
+                <div class="row">
+                    <p class="h3">Western Governors University | Online</p>
+                    <p class="h4">MBA</p>
+                    <p class="h4">May 2016 - Feb 2018</p>
+                    <p class="h5">Scored in the 99th percentile in the team Capstone business simulation</p>
+                </div>
+                <div class="row">
+                    <p class="h3">Utah Valley University | Orem, UT</p>
+                    <p class="h4">BS Aviation Science</p>
+                    <p class="h4">Sept 2009 - Apr 2013</p>
+                    <p class="h5">Magna Cum Laude</p>
+                </div>
             </div>
-            <div class="row">
-                <p class="h3">Utah Valley University | Orem, UT</p>
-                <p class="h4">BS Aviation Science</p>
-                <p class="h4">Sept 2009 - Apr 2013</p>
-                <p class="h5">Magna Cum Laude</p>
-            </div>
-        </div>
         <!-- end of resume div_______________________________-->
-        <div id="about" class="container">
-            <div class="row">
-                <p>About me</p>
+            <div id="about" class="container col-md-7">
+                <div class="row">
+                    <h3 class="h3">Career Change!</h3>
+                    <img src="images/meAndPlane.jpg" alt="standing inside B777 engine" class="img-responsive img-rounded">
+                    <p class="paragraph h4">I love flying jets.  The speed, views, planning, training, travel, judgment, prestige, experience is all great.  Turns out the bigger the planes you fly, the faster they go, the farther they go and the longer you stay away from home. THAT's the part I didn't like - being away from my wife and baby girl.  Aviation is highly regulated and thus being a pilot requires little creativity by design.  Safety and a high-level attention to detail is constantly required.</p>
+                    <p class="h4">I've gained a lot of satisfaction in my accomplishments thus far but I wanted a better quality of life.  I wanted a challenge intellectually, creatively, and I wanted to be entrepeneurial and contribute to change.  I knew becoming a software developer would be a good career so I started doing computer science courses on Lynda.com and bought some courses on Udemy.  I discovered freecodecamp, Stack Overflow, and the power of targeted-googling.  I fell in love with being able to think something up and go try to create it.</p>
+                    <p class="h4">I was progressing, albeit slowly, in my new coding career and wanted a jumpstart in the right direction so I researched bootcamps.  Coding Dojo was close to home, taught 3 full stacks and was relatively affordable so I jumped at the opportunity.  3.5 months of 12-13 hour days plus commuting 2 hours taught me how to work hard, perservere through the roadblocks, and learn difficult things.</p>
+                    <p class="h4">I am very excited for my new career in software development and hope to be able to build great things in the near future!</p>
+                    <img src="images/cockpit.jpg" alt="inside of cockpit" class="img-responsive img-rounded">
+            </div><!--end of about div-->
+            <div id="contact" class="container">
+                <div class="row">
+                    <h3 class="h3">Contact Me</h3>
+                    <h4 class="h4">I'd love to colloborate on a project or build something for you!</h4>
+                    <h5 class="h5">Trevor Banks Snyder</h5>
+                    <h5 class="h5">trevsny@gmail.com</h5>
+                    <h5 class="h5">805.427.5114</h5>
+                    <a href="https://www.linkedin.com/in/trevorbankssnyder"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/trevsny
+                "><i class="fab fa-github"></i></a>
+                </div>
             </div>
-        </div>
-       
-
-    </div> <!--end of body div-->
-</div>
+        </div> <!--end of #body div-->
+    </div><!-- end of #wrapper div-->
 </body>
 </html>
