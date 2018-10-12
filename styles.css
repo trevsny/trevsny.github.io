@@ -200,6 +200,10 @@ span {
     right: 10px;
     font-size: 60px;
 }
+.ucr {
+    text-decoration: none;
+    color: black;
+}
 @media (min-width:300px) {
     #me {
         width: 50%;
