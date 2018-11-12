@@ -21,6 +21,7 @@ body {
     position: sticky;
     top: 0;
     padding: 5px;
+    z-index: 100;
 }
 #myVideo {
     /* position: absolute;
@@ -37,8 +38,14 @@ h1 {
     left: 0px;
     right: 0px;
 } */
+.responsive-font {
+    font-size: 2.5vw;
 
-
+}
+.img-size {
+    width: 75%;
+    height: 75%;
+}
 .content {
     position: relative;
     bottom: 126px;
@@ -54,7 +61,66 @@ h1 {
 .subtitle {
     font-size: 3vw;
 }
+#projects-title-div {
+    display: block;
+    
+}
+.project-div {
+    position: relative;
+    width: 75%;
+    height: 75;
+}
+#project-section {
+    width: fit-content;
+    margin: auto;
+    border-top: black solid 4px;
+    border-bottom: black solid 4px;
+}
+.project-title {
+    font-size: 5.5vw;
+}
+.section-header {
+    font-size: 9.5vw;
+}
+.light-text {
+    color: white;
+}
+.no-gutters {
+    padding: 0;
+}
+.iframe {
+    height: 35vw;
+}
+/* .info-slide:hover,
+.info-slide:active {
+    
+} */
+/* .info-slide:hover,
+.info-slide:active {
+    height: 100px;
+} */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* UCR Project styling */
+#ucr {
+    background-color: #d3dded;
+}
+#ucr-text {
+    background-color: #333;
+    opacity: .9;
+    
+}
 /* Min-width media queries */
+@media (min-width: 100px) { 
+    .content {
+        bottom:80px;
+    }
+ }
+
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
     .content {
@@ -86,7 +152,7 @@ h1 {
  /* // Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) { 
     .content {
-        bottom:87px;
+        bottom:80px;
     }
  }
 

@@ -19,12 +19,12 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#title">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#video">Home <span class="sr-only">(current)</span></a>
                 </li>                
                 <li class="nav-item dropdown">
                     <a style="cursor:pointer;"class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#alisa">Alisa's Braidshop - MEAN</a>
+                        <a class="dropdown-item" href="#projects-title-div">Alisa's Braidshop - MEAN</a>
                         <a class="dropdown-item" href="#ucr">Utah Concert Review - Python</a>
                         <a class="dropdown-item" href="#highlight">myHighlight - Ruby/Rails</a>
                         <a class="dropdown-item" href="#taste">Taste, Not Waste - Python</a>
@@ -46,7 +46,7 @@
     
     <div id = "video" class="row col-12 no-gutters">
         <video autoplay muted loop id="myVideo">
-            <source src="new-jumbo.mp4" type="video/mp4"> Your browser does not support HTML5 video.
+            <source src="new-jumbo_compressed.mp4" type="video/mp4"> Your browser does not support HTML5 video.
             </video>
             <div class="content">
                 <h1 class= "name">Trevor Banks Snyder</h1>
@@ -54,21 +54,76 @@
             </div>
         </div>
         
-    <div class="container-fluid">
-    <!-- Braidbar -->
-    <div id="projects" class="row">
-            <div id="alisa" class="col-12">
-                <h2>Alisa's Braid Bar - </h2>
-                <a class = "h4" href="http://www.braidshop.co">braidshop.co</a>
+    <div class="container-fluid no-gutters">
+        <div id="projects-title-div">
+            <div id = "project-section">
+                <h1 class="light-text name">Projects</h1>
             </div>
-            <div class="row text-center" onclick = "">
-                <img class = "img-fluid rounded" src="images/elly.png" alt="Alisa's Braid Shop - halo braid">
-                <div class="middle row align-items-center">
-                    <div class="text">
-                        <p class="h5">Built in JavaScript, Express.js, Node.js, Angular, and Mongo DB. A business website for braid and hair design.  To book an appointment the client fills out a form that is sent as an email to the business owner.  I want to include multiple APIs and more features in the next versions.</p>
-                    </div> 
+        </div>
+    <!-- Braidbar -->
+    <!-- <div id="braidbar" class="row text-center"> -->
+            <div id="alisa" class="row mt-4 text-center">
+                <div class="col-12">
+                    <h2 class="light-text project-title">Alisa's Braid Bar</h2>
+                </div>
+                <a class = "subtitle light-text mx-auto" href="http://www.braidshop.co" target="_blank" rel="noopener noreferrer">braidshop.co</a>
+            </div>
+            <div class="row col-10 justify-content-center text-center mx-auto project-div" onclick = "">
+                <img id = "braid-img" class = "img-fluid rounded info-slide img-size" src="images/elly.png" alt="Alisa's Braid Shop - halo braid">
+                <div id = "braid-description" class="light-text centered">
+                    <p class="responsive-font">Built in JavaScript, Express.js, Node.js, Angular, and Mongo DB. A business website for braid and hair design.  To book an appointment the client fills out a form that is sent as an email to the business owner.  I want to include multiple APIs and more features in the next versions.</p>
                 </div>
             </div>
+            <div class=" img-size text-center mx-auto mt-5 mb-5">
+                <iframe class="img-size iframe" src="https://www.youtube.com/embed/Ib_vF52RkOI?ecver=2" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <p class="subtitle light-text">Demo of Braidbar website</p>
+            </div>
+    <!-- </div> -->
+            <!-- Embedded demo -->
+    <!-- Utah Concert Review -->
+    <div id="ucr">
+
+        <div class="row justify-content-center text-center">
+            <a class = "" href="http://13.58.209.101/" target="_blank" rel="noopener noreferrer"><h2>Utah Concert Review/Upcoming Concerts</h2></a>
+            <a class="" href="https://github.com/trevsny/utah-concert-review" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+        </div>
+        <div class="row col-10 justify-content-center mx-auto project-div" onclick = "">
+                <img class = "rounded img-fluid img-size" src="images/ucr.jpg" alt="utah concerts">
+                <div id = "ucr-text" class="light-text centered">
+                    <p class="responsive-font">Built in Python/Django. User side sees only concerts in the database and can filter through them by typing in text boxes which make ajax calls.  Set in an iframe on a Wordpress site for a client.  Admin site features CRUD capability along with my <em>proudest functionality:</em> web scraping concert venue websites with one click that gathers concert information and saves it into a database.  Also ability to delete past concerts in bulk with one click.</p>      
+                </div>
+            </div>
+    </div>
+        <!-- Add demo of UCR -->
+
+    <!-- myHighlight -->
+        <div id= "highlight" class="row">
+            <h2>myHighlight - </h2>
+            <a class="website" href="https://github.com/trevsny/myHighlight" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+        </div>
+            <div class="row col-10 justify-content-center mx-auto project-div" onclick = "">
+                <img class = "rounded img-fluid img-size" src="images/bballCourt.jpg" alt="basketball court">
+                <div class="row light-text centered">
+                    <p class="responsive-font">Built in Ruby and Ruby on Rails. Create your own sportscenter-like highlight show.  Choose from various sports to search videos and add them to a list of videos to then consume, like a customizable highlight show.  Work in progress...</p>                  
+                </div>
+            </div>
+            <!-- Embedded demo -->
+            <!-- <div style="position:relative;height:0;padding-bottom:56.25%;z-index: 2;"><iframe src="https://www.youtube.com/embed/QKB8L0uHQhM?ecver=2" style="position:absolute;width:90%;height:90%;left:0" width="640" height="360" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div> -->
+    <!-- Taste, Not Waste -->
+        <div id = "taste" class="row light-text">
+            <h2>Taste, Not Waste</h2>
+            <a href="https://github.com/Baileyleeanderson/charity_food/" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+        </div>
+            <div class="row col-10 justify-content-center mx-auto project-div" onclick = "">
+                <img class = "rounded img-fluid img-size" src="images/food.jpg" alt="food">
+                <div class="row light-text centered">
+                    <p class="responsive-font">Built in Python, Django, mySQL. Collaboration project - goal is to allow restaurants and charities to coordinate picking up leftover food and distributing it to those in need.</p>
+                </div>
+            </div>
+        </div>
+        <!--end of projects section-->
+
+
         <!-- Profile picture of me -->
         <!-- <div id="title" class="row mx-auto col-12 text-center">
             <h1 id="name" class="h1 mx-auto">Trevor Banks Snyder</h1>
