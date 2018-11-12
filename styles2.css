@@ -85,6 +85,9 @@ h1 {
 .light-text {
     color: white;
 }
+.dark-text {
+    color: #222;
+}
 .no-gutters {
     padding: 0;
 }
@@ -107,12 +110,11 @@ h1 {
 }
 /* UCR Project styling */
 #ucr {
-    background-color: #d3dded;
+    background-color: #dedee0;
 }
 #ucr-text {
     background-color: #333;
-    opacity: .9;
-    
+    opacity: .8;
 }
 /* Min-width media queries */
 @media (min-width: 100px) { 
