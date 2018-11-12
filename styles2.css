@@ -1,0 +1,110 @@
+body {
+    background-image: linear-gradient(#333,#222);
+}
+/* img {
+    z-index: -1;
+    margin-top: 0;
+} */
+#video {
+    padding: 0;
+    position: relative;
+    bottom: 20px;
+    z-index: -1;
+}
+/* Had to remove flex from Bootstrap */
+#profile {
+    display: block;
+}
+
+#nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 5px;
+}
+#myVideo {
+    /* position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 0; */
+    width: 100%;
+    height: 100%;
+}
+/* 
+h1 {
+    position: relative;
+    left: 0px;
+    right: 0px;
+} */
+
+
+.content {
+    position: relative;
+    bottom: 126px;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 15px;
+}
+.name {
+    font-size: 6.5vw;
+}
+.subtitle {
+    font-size: 3vw;
+}
+/* Min-width media queries */
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    .content {
+        bottom:88px;
+    }
+ }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .content {
+        bottom: 131px;
+    }
+ }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .content {
+        bottom: 184px;
+    }
+ }
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    .content {
+        bottom: 210px;
+    }
+ }
+/* Max-width media queries */
+ /* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    .content {
+        bottom:87px;
+    }
+ }
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+
+ }
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+    .content {
+        bottom: 158px;
+    }
+ }
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { 
+    /* .content {
+        bottom: 182px;
+    } */
+ }
