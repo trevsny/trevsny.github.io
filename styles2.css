@@ -59,21 +59,31 @@ h1 {
 }
 .content {
     position: relative;
-    bottom: 126px;
+    /* bottom: 126px; */
     left: 0;
     background: rgba(0, 0, 0, 0.2);
     color: #f1f1f1;
     width: 100%;
     padding: 15px;
 }
+.title {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 6.5vw;
+}
 .name {
     font-size: 6.5vw;
+    font-family: 'Allerta Stencil', sans-serif;
 }
 .subtitle {
     font-size: 3vw;
+    font-family: 'Dosis', sans-serif;
+}
+.dosis-font {
+    font-family: 'Dosis', sans-serif;
 }
 #projects-title-div {
     display: block;
+    margin-bottom: 10%;
     
 }
 .project-div {
@@ -89,6 +99,14 @@ h1 {
 }
 .project-title {
     font-size: 5.5vw;
+    font-family: 'Dosis', sans-serif;
+}
+.paragraph-text {
+    font-family: 'Open Sans', sans-serif;
+}
+.text-indent {
+    text-indent: 40px;
+    margin: 10px;
 }
 .section-header {
     font-size: 9.5vw;
@@ -134,13 +152,16 @@ h1 {
 .skills-section-title {
     font-size: 4vw;
     text-align: center;
+    font-family: 'Dosis', sans-serif;
+    color: dodgerblue;
 }
 .skill-font {
     font-size: 3vw;
+    font-family: 'Open Sans', sans-serif;
 }
 
 /* Min-width media queries */
-@media (min-width: 100px) { 
+@media (min-width: 500px) { 
     .content {
         bottom:80px;
     }
@@ -188,9 +209,9 @@ h1 {
 
 /* // Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) { 
-    .content {
+    /* .content {
         bottom: 158px;
-    }
+    } */
  }
 
 /* // Large devices (desktops, less than 1200px) */
