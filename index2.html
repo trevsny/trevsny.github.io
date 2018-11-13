@@ -8,12 +8,13 @@
     <link rel="shortcut icon" href="images/favicon.jpg">
     <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil|Dosis|Open+Sans|Permanent+Marker" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles2.css">
     
 </head>
 <body>
     <nav id="nav" class="navbar navbar-expand-md navbar-dark bg-dark">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target = "#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler dropright" type="button" data-toggle="collapse" data-target = "#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -31,7 +32,16 @@
                     </div>                 
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="#tech_skills">Tech Skills</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="#resume">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
                 </li>
                 <li class="nav-item">
                     <a class = "nav-link" href="https://www.linkedin.com/in/trevordsnyder/"><i class="fab fa-linkedin"></i></a>
@@ -42,21 +52,20 @@
             </ul>
         </div>
     </nav>
-    <!-- Add Spyscroll thing -->
-    
+
     <div id = "video" class="row col-12 no-gutters">
         <video autoplay muted loop id="myVideo">
             <source src="new-jumbo_compressed.mp4" type="video/mp4"> Your browser does not support HTML5 video.
             </video>
             <div class="content">
-                <h1 class= "name">Trevor Banks Snyder</h1>
+                <h1 class= "title">Trevor Banks Snyder</h1>
                 <h5 class="subtitle">Full-Stack Software Engineer</h5>
             </div>
         </div>
-        
+         
     <div class="container-fluid no-gutters">
         <div id="projects-title-div">
-            <div class = "section-header">
+            <div class = "dark-section-header">
                 <h1 class="light-text name">Projects</h1>
             </div>
         </div>
@@ -70,7 +79,7 @@
             <div class="row col-10 justify-content-center text-center mx-auto project-div" onclick = "">
                 <img id = "braid-img" class = "img-fluid rounded info-slide img-size" src="images/elly.png" alt="Alisa's Braid Shop - halo braid">
                 <div id = "braid-description" class="light-text centered">
-                    <p class="responsive-font">Built in JavaScript, Express.js, Node.js, Angular, and Mongo DB. A business website for braid and hair design.  To book an appointment the client fills out a form that is sent as an email to the business owner.  I want to include multiple APIs and more features in the next versions.</p>
+                    <p class="responsive-font paragraph-text">Built in JavaScript, Express.js, Node.js, Angular, and Mongo DB. A business website for braid and hair design.  To book an appointment the client fills out a form that is sent as an email to the business owner.  I want to include multiple APIs and more features in the next versions.</p>
                 </div>
             </div>
             <!-- Embedded demo -->
@@ -88,7 +97,7 @@
         <div class="row col-10 justify-content-center mx-auto project-div" onclick = "">
                 <img class = "rounded img-fluid img-size" src="images/ucr.jpg" alt="utah concerts">
                 <div id = "ucr-text" class="light-text centered rounded">
-                    <p style ="font-size: 2vw;" class="responsive-font">Built in Python/Django. User side sees only concerts in the database and can filter through them by typing in text boxes which make ajax calls.  Set in an iframe on a Wordpress site for a client.  Admin site features CRUD capability along with my <em>proudest functionality:</em> web scraping concert venue websites with one click that gathers concert information and saves it into a database.  Also ability to delete past concerts in bulk with one click.</p>      
+                    <p style ="font-size: 2vw;" class="responsive-font paragraph-text">Built in Python/Django. User side sees only concerts in the database and can filter through them by typing in text boxes which make ajax calls.  Set in an iframe on a Wordpress site for a client.  Admin site features CRUD capability along with my <em>proudest functionality:</em> web scraping concert venue websites with one click that gathers concert information and saves it into a database.  Also ability to delete past concerts in bulk with one click.</p>      
                 </div>
             </div>
         <!-- demo of UCR -->
@@ -101,7 +110,7 @@
     </div>
 
     <!-- myHighlight -->
-    <div id= "highlight" style="height:40px;"></div>
+    <div id= "highlight" style="height:50px;"></div>
         <div  class="row justify-content-center">
             <h2 class="project-title light-text">myHighlight</h2>
         </div>
@@ -111,7 +120,7 @@
             <div class="row col-10 justify-content-center mx-auto project-div" onclick = "">
                 <img class = "rounded img-fluid img-size" src="images/bballCourt.jpg" alt="basketball court">
                 <div class="row light-text centered">
-                    <p class="responsive-font">Built in Ruby and Ruby on Rails. Create your own sportscenter-like highlight show.  Choose from various sports to search videos and add them to a list of videos to then consume, like a customizable highlight show.  Work in progress...</p>                  
+                    <p class="responsive-font paragraph-text">Built in Ruby and Ruby on Rails. Create your own sportscenter-like highlight show.  Choose from various sports to search videos and add them to a list of videos to then consume, like a customizable highlight show.  Work in progress...</p>                  
                 </div>
             </div>
             <!-- Embedded demo -->
@@ -131,7 +140,7 @@
             <div class="row col-10 justify-content-center mx-auto project-div" onclick = "">
                 <img class = "rounded img-fluid img-size" src="images/food.jpg" alt="food">
                 <div class="row light-text centered">
-                    <p class="responsive-font">Built in Python, Django, mySQL. Collaboration project - goal is to allow restaurants and charities to coordinate picking up leftover food and distributing it to those in need.</p>
+                    <p class="responsive-font paragraph-text">Built in Python, Django, mySQL. Collaboration project - goal is to allow restaurants and charities to coordinate picking up leftover food and distributing it to those in need.</p>
                 </div>
             </div>
         </div>
@@ -141,8 +150,9 @@
         <!--end of projects section-->
 
         <!-- Skills section -->
-        <div id="tech_skills" class="mt-4 mb-5">
-            <div class="section-header">
+        <div id="tech_skills" style="height:25px;"></div>
+        <div class="mt-4 mb-5">
+            <div class="dark-section-header">
                 <h1 class="light-text name">Technical Skills</h1>
             </div>
         </div>
@@ -216,118 +226,132 @@
                 </div>
         </div>
         <!-- Work experience -->
-        <div id="resume" class = "col-12 light-div">
-            <div class="row">
-                <h2 class="h2">Work Experience</h2>
+        <div id="resume" style="height:30px; background-color:#dedee0;"></div>
+        <div class = "col-12 light-div">
+            <div class="row light-section-header">
+                <h2 class="h2 name mx-auto">Work Experience</h2>
             </div>
             <div class="row">
-                <p class="h3">Freelance @ Snyder Studios | Austin, TX</p>
+                <p class="h3 dosis-font">Freelance @ Snyder Studios | Austin, TX</p>
             </div>
             <div class="row">
-                <p class="h4">Software Developer |  Aug 2018 - present</p>
+                <p class="h4 dosis-font">Software Developer |  Aug 2018 - present</p>
             </div>
             <div class="row">
                 <ul>
-                    <li class="h5">Building functionality and websites for clients. Build Admin portals with CRUD operations and data management. Using Python, JavaScript, HTML, CSS, Bootstrap, Scrapy.  Deployment with Amazon Web Services.  Clients: <a href="http://utahconcertreview.com">Utahconcertreview.com</li></a>
+                    <li class="h5 paragraph-text">Building functionality and websites for clients. Build Admin portals with CRUD operations and data management. Using Python, JavaScript, HTML, CSS, Bootstrap, Scrapy.  Deployment with Amazon Web Services.  Clients: <a href="http://utahconcertreview.com">Utahconcertreview.com</li></a>
                 </ul>
             </div>
 
             <div class="row">
-                <p class="h3">Coding Dojo | Burbank,CA</p>
+                <p class="h3 dosis-font">Coding Dojo | Burbank,CA</p>
             </div>
             <div class="row">
-                <p class="h4">Software Developer Trainee | Feb 2018 - June 2018</p>
+                <p class="h4 dosis-font">Software Developer Trainee | Feb 2018 - June 2018</p>
             </div>
             <div class="row">
                 <ul>
-                    <li class="h5">Full-stack immersive bootcamp that involved 1000+ hours of coding with 60+ other classmates.  Built over 40 apps and concentrated on 3 projects.</li>
+                    <li class="h5 paragraph-text">Full-stack immersive bootcamp that involved 1000+ hours of coding with 60+ other classmates.  Built over 40 apps and concentrated on 3 projects.</li>
                 </ul>
             </div>
             <div class="row">
-                <p class="h3">SkyWest Airlines | LAX, FAT, MSP</p>
+                <p class="h3 dosis-font">SkyWest Airlines | LAX, FAT, MSP</p>
             </div>
             <div class="row">
-                <p class="h4">First Officer | Oct 2015 - Nov 2018</p>
+                <p class="h4 dosis-font">First Officer | Oct 2015 - Nov 2018</p>
             </div>
             <div class="row">
                 <ul>
-                    <li class="h5"> Assisted the Captain/PIC, flight attendants, maintenance, and service personnel, in conducting over 500
+                    <li class="h5 paragraph-text"> Assisted the Captain/PIC, flight attendants, maintenance, and service personnel, in conducting over 500
                     flights safely, efficiently and at a 97% on-time performance.</li> 
-                    <li class="h5">Coordinated with dispatch in the planning and execution of the flight</li>
+                    <li class="h5 paragraph-text">Coordinated with dispatch in the planning and execution of the flight</li>
                 </ul>
             </div>
             <div class="row">
-                <p class="h3">Channel Islands Aviation | Camarillo, CA</p>
+                <p class="h3 dosis-font">Channel Islands Aviation | Camarillo, CA</p>
             </div>
             <div class="row">
-                <p class="h4">Flight Instructor | Feb 2014 - Oct 2015</p>
+                <p class="h4 dosis-font">Flight Instructor | Feb 2014 - Oct 2015</p>
             </div>
             <div class="row">
                 <ul>
-                    <li class="h5">Personalized and managed flight and ground instruction for 10 clients that earned private pilot certificates and instrument ratings</li>
-                    <li class="h5">Trained 8 other clients to solo and approved 9 others for their biennial flight review</li>
+                    <li class="h5 paragraph-text">Personalized and managed flight and ground instruction for 10 clients that earned private pilot certificates and instrument ratings</li>
+                    <li class="h5 paragraph-text">Trained 8 other clients to solo and approved 9 others for their biennial flight review</li>
                 </ul>
             </div>
-            <div class="row">
-                <h2 class="h2">Education</h2>
+            <div class="row light-section-header">
+                <h2 class="h2 name mx-auto">Education</h2>
             </div>
             <div class="row">
-                <p class="h3">Coding Dojo | Burbank, CA</p>
+                <p class="h3 dosis-font">Coding Dojo | Burbank, CA</p>
             </div>
             <div class="row">
-                <p class="h4">Feb 2018 - Jun 2018</p>
+                <p class="h4 dosis-font">Feb 2018 - Jun 2018</p>
             </div>
             <div class="row">
-                <p class="h4">Nationwide 14-week full-time immersive bootcamp.  Learned HTML, CSS, Python, Ruby, and JavaScript</p>
+                <p class="h5 paragraph-text"><em>Nationwide 14-week full-time immersive bootcamp.  Learned HTML, CSS, Python, Ruby, and JavaScript</em></p>
             </div>
             <div class="row">
-                <p class="h3">Western Governors University | Online</p>
+                <p class="h3 dosis-font">Western Governors University | Online</p>
             </div>
             <div class="row">
-                <p class="h4">MBA | May 2016 - Feb 2018</p>
+                <p class="h4 dosis-font">MBA | May 2016 - Feb 2018</p>
             </div>
             <div class="row">
-                <p class="h5">Scored in the 99th percentile in the team Capstone business simulation</p>
+                <p class="h5 paragraph-text"><em>Scored in the 99th percentile in the team Capstone business simulation</em></p>
             </div>
             <div class="row">
-                <p class="h3">Utah Valley University | Orem, UT</p>
+                <p class="h3 dosis-font">Utah Valley University | Orem, UT</p>
             </div>
             <div class="row">
-                <p class="h4">BS Aviation Science | Sept 2009 - Apr 2013</p>
+                <p class="h4 dosis-font">BS Aviation Science | Sept 2009 - Apr 2013</p>
             </div>
             <div class="row">
-                <p class="h5">Magna Cum Laude</p>
+                <p class="h5 paragraph-text"><em>Magna Cum Laude</em></p>
             </div>
         </div>
         <!-- end of resume div_______________________________-->
-        <div id="about" class="container col-md-7">
-                <div class="row">
-                    <h3 class="h3">Career Change!</h3>
-                    <img src="images/meAndPlane.jpg" alt="standing inside B777 engine" class="img-responsive img-rounded">
-                    <p class="paragraph h4">I love flying jets.  The speed, views, planning, training, travel, judgment, prestige, experience is all great.  Turns out the bigger the planes you fly, the faster they go, the farther they go and the longer you stay away from home. THAT's the part I didn't like - being away from my wife and baby girl.  Aviation is highly regulated and thus being a pilot requires little creativity by design.  Safety and a high-level attention to detail is constantly required.</p>
-                    <p class="h4">I've gained a lot of satisfaction in my accomplishments thus far but I wanted a better quality of life.  I wanted a challenge intellectually, creatively, and I wanted to be entrepeneurial and contribute to change.  I knew becoming a software developer would be a good career so I started doing computer science courses on Lynda.com and bought some courses on Udemy.  I discovered freecodecamp, Stack Overflow, and the power of targeted-googling.  I fell in love with being able to think something up and go try to create it.</p>
-                    <p class="h4">I was progressing, albeit slowly, in my new coding career and wanted a jumpstart in the right direction so I researched bootcamps.  Coding Dojo was close to home, taught 3 full stacks and was relatively affordable so I jumped at the opportunity.  3.5 months of 12-13 hour days plus commuting 2 hours taught me how to work hard, perservere through the roadblocks, and learn difficult things.</p>
-                    <p class="h4">I am very excited for my new career in software development and hope to be able to build great things in the near future!</p>
-                    <img src="images/cockpit.jpg" alt="inside of cockpit" class="img-responsive img-rounded">
-                </div>
-            </div><!--end of about div-->
-        <!-- Profile picture of me -->
-        <!-- <div id="title" class="row mx-auto col-12 text-center">
-            <h1 id="name" class="h1 mx-auto">Trevor Banks Snyder</h1>
-        </div> -->
-        <div id ="profile" class="row col-9 text-center mx-auto">
-            <img id = "me" class="img-fluid rounded" src="images/trevProfile.jpg" alt="profile picture">
+        <div id="about" style="height:15px;"></div>
+        <div class="col-12 mt-5 mb-5">
+            <div class="row mb-4 text-center light-section-header">
+                <h1 class="light-text mx-auto name">Career Change!</h1>
+            </div>
+            <div class="row justify-content-center">
+                <img src="images/meAndPlane.jpg" alt="standing inside B777 engine" class="img-fluid rounded img-size">
+                <p class="h4 light-text paragraph-text text-indent">I love flying jets.  The speed, views, planning, training, travel, judgment, prestige, experience is all great.  Turns out the bigger the planes you fly, the faster they go, the farther they go and the longer you stay away from home. THAT's the part I didn't like - being away from my wife and baby girl.  Aviation is highly regulated and thus being a pilot requires little creativity by design.  Safety and a high-level attention to detail is constantly required.</p>
+                <p class= "h4 light-text paragraph-text text-indent">I've gained a lot of satisfaction in my accomplishments thus far but I wanted a better quality of life.  I wanted a challenge intellectually, creatively, and I wanted to be entrepeneurial and contribute to change.  I knew becoming a software developer would be a good career so I started doing computer science courses on Lynda.com and bought some courses on Udemy.  I discovered freecodecamp, Stack Overflow, and the power of targeted-googling.  I fell in love with being able to think something up and go try to create it.</p>
+                <p class= "h4 light-text paragraph-text text-indent">I was progressing, albeit slowly, in my new coding career and wanted a jumpstart in the right direction so I researched accelerate software development programs or bootcamps.  Coding Dojo was close to home, taught 3 full stacks and was relatively affordable so I jumped at the opportunity.  3.5 months of 12-13 hour days plus commuting 2 hours taught me how to work hard, perservere through the roadblocks, and learn difficult things.</p>
+                <p class= "h4 light-text paragraph-text text-indent">I am very excited for my new career in software development and hope to be able to build great things in the near future!</p></p>
+                <img src="images/cockpit.jpg" alt="inside of cockpit" class="img-fluid rounded img-size">
+            </div>
+        </div><!--end of about div-->
+        <div id="contact" style="height:15px; background-color:#dedee0;"></div>
+        <div class="light-div col-12">
+            <div class="row text-center mb-3 dark-section-header">
+                <h3 class="mx-auto name">Contact Me</h3>
+            </div>
+            <div id ="profile" class="row col-9 text-center mx-auto">
+                    <!-- Profile picture of me -->
+                <img id = "me" class="img-fluid rounded" src="images/trevProfile.jpg" alt="profile picture">
+            </div>
+            <div class="row">
+                <h4 class="h4 paragraph-text mx-auto text-center">I'd love to collaborate on a project or build something for you!</h4>
+            </div>
+            <div class="row" style="justify-content: space-evenly;">
+                <h5 class="h5 subtitle">Trevor Banks Snyder</h5><br>
+                <h5 class="h5 subtitle">trevsny@gmail.com</h5>
+                <h5 class="h5 subtitle">805.427.5114</h5><br>
+            </div>
+            <div class="row justify-content-center">
+                <a href="https://www.linkedin.com/in/trevorbankssnyder"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/trevsny"><i class="fab fa-github"></i></a>
+            </div>
         </div>
-        <!-- <div class="row col-12 text-center">
-            <h3 class="mx-auto">Full-Stack Software Engineer</h3>
-        </div> -->
-       
-        
-    </div> <!-- end of container div -->
 
+    </div> <!-- end of container div -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <!-- My js file -->
-    <script src="javascript.js"></script>
+    <!-- <script src="javascript.js"></script> -->
     <!-- Bootstrap js files -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
