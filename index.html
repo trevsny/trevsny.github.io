@@ -2,38 +2,63 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Trevor Snyder Portfolio</title>
     <link rel="shortcut icon" href="images/favicon.jpg">
     <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="javascript.js"></script>
+    
 </head>
 <body>
-    <div id="nav" class="overlay">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark position-sticky">
+        <div class="collapse navbar-collapse" id="home">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#title">Home <span class="sr-only">(current)</span></a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle dropright" id="navbarDropdown" data-toggle="dropdown">
+                        Projects</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#alisa">Alisa's Braidshop - MEAN</a>
+                            <a class="dropdown-item" href="#ucr">Utah Concert Review - Python</a>
+                            <a class="dropdown-item" href="#highlight">myHighlight - Ruby/Rails</a>
+                            <a class="dropdown-item" href="#taste">Taste, Not Waste - Python</a>
+                            
+                        </div>
+                 
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#resume">Resume</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+<!-- ADD in scrollspy  -->
+   
+              <!-- ----------------------------------- -->
+   <!-- <div id="nav" class="overlay"> -->
         <!-- Overlay content -->
-        <div class="overlay-content">
+        <!-- <div class="overlay-content"> -->
             <!-- Button to close the overlay navigation -->
-            <a href="" class="closebtn" onclick="closeNav()">&times;</a>
+            <!-- <a href="" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="#projects" onclick="closeNav()">Projects</a>
             <a href="#languages" onclick="closeNav()">Languages/Skills</a>
             <a href="#resume" onclick="closeNav()">R&eacute;sum&eacute;</a>
             <a href="#about" onclick="closeNav()">About Me</a>
             <a href="#contact" onclick="closeNav()">Contact</a>
         </div>
-    </div>
+    </div>  -->
     <div id="wrapper" class="container">
-        <div id="header" class="container">
             <div id="social" class="row">
-                <a href="www.linkedin.com/in/trevordsnyder"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/trevordsnyder/"><i class="fab fa-linkedin"></i></a>
                 <a href="https://github.com/trevsny"><i class="fab fa-github"></i></a>
                 <span style="cursor:pointer" onclick="openNav()"><i class="fas fa-bars big-icon"></i></span>
             </div>
-        </div>
+        
         <div id="title" class="row">
             <h1 id="name">Trevor Banks Snyder</h1>
             <img id = "me" class="img-rounded img-responsive" src="images/trevProfile.jpg" alt="profile picture">
@@ -53,7 +78,7 @@
                 </div>
             </div>
             <div id="projects" class="row">
-                <div>
+                <div id="alisa">
                     <h2>Alisa's Braid Bar - </h2>
                     <a class = "website" href="http://www.braidshop.co">braidshop.co</a>
                 </div>
@@ -66,7 +91,7 @@
                     </div>
                 </div>
                 <div style="position:relative;height:0;padding-bottom:56.25%;z-index: 2;"><iframe src="https://www.youtube.com/embed/Ib_vF52RkOI?ecver=2" style="position:absolute;width:90%;height:90%;left:0" width="640" height="360" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
-                <div class="row">
+                <div id = "ucr" class="row">
                     <a class = "ucr" href="https://18.224.149.151"><h2>Utah Concert Review/Upcoming Concerts -  </h2></a>
                     <a class="website" href="https://github.com/trevsny/utah-concert-review">GitHub Repo</a>
                 </div>
@@ -78,7 +103,7 @@
                         </div>                   
                     </div>
                 </div>
-                <div class="row">
+                <div id= "highlight" class="row">
                     <h2>myHighlight - </h2>
                     <a class="website" href="https://github.com/trevsny/myHighlight">GitHub Repo</a>
                 </div>
@@ -91,7 +116,7 @@
                     </div>
                 </div>
                 <div style="position:relative;height:0;padding-bottom:56.25%;z-index: 2;"><iframe src="https://www.youtube.com/embed/QKB8L0uHQhM?ecver=2" style="position:absolute;width:90%;height:90%;left:0" width="640" height="360" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
-                <div class="row">
+                <div id = "taste" class="row">
                     <h2>Taste, Not Waste</h2>
                     <a href="https://github.com/Baileyleeanderson/charity_food/">GitHub Repo</a>
                 </div>
@@ -240,5 +265,12 @@
             </div>
         </div> <!--end of #body div-->
     </div><!-- end of #wrapper div-->
+
+    <!-- My js file -->
+    <script src="javascript.js"></script>
+     <!-- Bootstrap js files -->
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>
