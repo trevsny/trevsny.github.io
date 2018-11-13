@@ -4,6 +4,11 @@ body {
 a {
     text-decoration: underline;
 }
+ul {
+    list-style-position: outside;
+    display: inline-block;
+    text-align: left;
+}
 .row {
     margin: 0;
 }
@@ -97,6 +102,9 @@ h1 {
 .no-gutters {
     padding: 0;
 }
+.col-sm {
+    margin: 10px;
+}
 .iframe {
     height: 35vw;
 }
@@ -122,6 +130,15 @@ h1 {
     background-color: #333;
     opacity: .8;
 }
+
+.skills-section-title {
+    font-size: 4vw;
+    text-align: center;
+}
+.skill-font {
+    font-size: 3vw;
+}
+
 /* Min-width media queries */
 @media (min-width: 100px) { 
     .content {
