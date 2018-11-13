@@ -1,6 +1,14 @@
 body {
     background-image: linear-gradient(#333,#222);
 }
+a {
+    text-decoration: underline;
+}
+ul {
+    list-style-position: outside;
+    display: inline-block;
+    text-align: left;
+}
 .row {
     margin: 0;
 }
@@ -71,9 +79,9 @@ h1 {
 .project-div {
     position: relative;
     width: 75%;
-    height: 75;
+    height: 75%;
 }
-#project-section {
+.section-header {
     width: fit-content;
     margin: auto;
     border-top: black solid 4px;
@@ -94,6 +102,9 @@ h1 {
 .no-gutters {
     padding: 0;
 }
+.col-sm {
+    margin: 10px;
+}
 .iframe {
     height: 35vw;
 }
@@ -112,13 +123,22 @@ h1 {
     transform: translate(-50%, -50%);
 }
 /* UCR Project styling */
-#ucr {
+.light-div {
     background-color: #dedee0;
 }
 #ucr-text {
     background-color: #333;
     opacity: .8;
 }
+
+.skills-section-title {
+    font-size: 4vw;
+    text-align: center;
+}
+.skill-font {
+    font-size: 3vw;
+}
+
 /* Min-width media queries */
 @media (min-width: 100px) { 
     .content {
