@@ -16,11 +16,3 @@
 
 // }
 
-
-$(document).ready(function(){
-    console.log("helllllow");
-    console.log($("#name").css({"left": "15px"}));
-    
-    // $("#name").css("left", "5px");
-
-});

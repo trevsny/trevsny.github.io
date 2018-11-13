@@ -1,5 +1,6 @@
 body {
     background-image: linear-gradient(#333,#222);
+    position: relative;
 }
 a {
     text-decoration: underline;
@@ -12,10 +13,14 @@ ul {
 .row {
     margin: 0;
 }
-/* img {
-    z-index: -1;
-    margin-top: 0;
-} */
+.dropdown-menu {
+    padding: 0;
+}
+.dropdown-item {
+    background-color: #222;
+    font-family: 'Dosis', sans-serif;
+    color: rgba(255,255,255,.5);
+}
 #video {
     padding: 0;
     position: relative;
@@ -91,11 +96,12 @@ h1 {
     width: 75%;
     height: 75%;
 }
-.section-header {
+.dark-section-header {
     width: fit-content;
     margin: auto;
     border-top: black solid 4px;
     border-bottom: black solid 4px;
+    font-size: 9.5vw;
 }
 .project-title {
     font-size: 5.5vw;
@@ -107,9 +113,6 @@ h1 {
 .text-indent {
     text-indent: 40px;
     margin: 10px;
-}
-.section-header {
-    font-size: 9.5vw;
 }
 .light-text {
     color: white;
@@ -159,7 +162,13 @@ h1 {
     font-size: 3vw;
     font-family: 'Open Sans', sans-serif;
 }
-
+.light-section-header {
+    width: fit-content;
+    margin: auto;
+    border-top: white solid 4px;
+    border-bottom: white solid 4px;
+    margin-bottom: 4%;
+}
 /* Min-width media queries */
 @media (min-width: 500px) { 
     .content {
@@ -171,6 +180,12 @@ h1 {
 @media (min-width: 576px) { 
     .content {
         bottom:88px;
+    }
+    .skills-section-title {
+        font-size: 4vw;
+    }
+    .skill-font {
+        font-size: 2vw;
     }
  }
 
@@ -198,7 +213,22 @@ h1 {
  /* // Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) { 
     .content {
-        bottom:80px;
+        bottom:81px;
+    }
+    .skills-section-title {
+        font-size: 6vw;
+    }
+    .skill-font {
+        font-size: 4vw;
+    }
+    .h3 {
+        font-size: 1rem;
+    }
+    .h4 {
+        font-size: .9rem;
+    }
+    .h5 {
+        font-size: .8rem;
     }
  }
 
