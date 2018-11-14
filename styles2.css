@@ -55,12 +55,12 @@ h1 {
     right: 0px;
 } */
 .responsive-font {
-    font-size: 2.5vw;
+    font-size: 1.5vw;
 
 }
 .img-size {
-    width: 75%;
-    height: 75%;
+    width: 50%;
+    height: 50%;
 }
 .content {
     position: relative;
@@ -127,7 +127,11 @@ h1 {
     margin: 10px;
 }
 .iframe {
-    height: 35vw;
+    height: 20vw;
+    width: 50%;
+}
+.iframe-div {
+    width: 75%;
 }
 /* .info-slide:hover,
 .info-slide:active {
@@ -147,7 +151,7 @@ h1 {
 .light-div {
     background-color: #dedee0;
 }
-#ucr-text {
+.transparent-dark-background {
     background-color: #333;
     opacity: .8;
 }
