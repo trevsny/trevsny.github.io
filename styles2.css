@@ -114,6 +114,7 @@ h1 {
 .text-indent {
     text-indent: 40px;
     margin: 10px;
+    line-height: 32px;
 }
 .light-text {
     color: white;
