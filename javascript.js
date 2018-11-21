@@ -1,18 +1,18 @@
-/* Open */
-// function openNav() {
-//     document.getElementById("nav").style.width = "100%";
-//     document.getElementById("nav").style.height = "100%";
-//     document.getElementById("nav").style.display = "block";
-//     document.getElementById("wrapper").style.display = "none";
+// JavaScript for disabling form submissions if there are invalid fields
+    
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.getElementsByClassName('needs-validation');
+     
+      // Loop over them and prevent submission
+      var validation = Array.prototype.filter.call(forms, function(form) {
+        form.addEventListener('submit', function(event) {
+          if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+        }, false);
 
-// }
+      });
 
-// /* Close */
-// function closeNav() {
-//     document.getElementById("nav").style.width = "0%";
-//     document.getElementById("nav").style.height = "100%";
-//     document.getElementById("nav").style.display = "none";
-//     document.getElementById("wrapper").style.display = "block";
-
-// }
-
+    
